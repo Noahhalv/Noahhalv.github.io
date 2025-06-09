@@ -1,0 +1,23 @@
+[
+    {
+        "comment": "Metadata goes here!",
+        "type": "manga",
+        "genre": "shonen",
+        "title": "Jujutsu Kaisen"
+    },
+    {
+        "chapter": "1",
+        "title": "Ryomen Sukuna",
+        "pages": 53
+    },
+    {
+        "chapter": "2",
+        "title": "Secret Execution",
+        "pages": 25
+    },
+    {
+        "chapter": "3",
+        "title": "For Myself",
+        "pages": 23
+    }
+]

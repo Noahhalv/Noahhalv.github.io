@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Read Manga</title>
+</head>
+<body class="with_ui" id="body">
+
+    <div class="" id="ch_ju">
+        <div id="chapter_jump">
+            <p>Chapter Jump</p>
+            W.I.P
+        </div>
+    </div>
+
+    <nav id="top_ui">
+        <div id="home" tabindex="0"><img src="images/logo.png" alt="Home" id="logo"></div>
+        <div id="chapter" onclick=""></div>
+        <div id="page"></div>
+    </nav>
+    <main>
+        <div id="paper">
+            <div class="left" onclick="if (currPage != 1) {currPage--; getPage('jujutsuKaisen')} else {console.warn('Pages cannot go below 1')}"></div>
+            <div id="access_ui" class="center" onclick=""></div>
+            <div class="right" onclick="currPage++; getPage('jujutsuKaisen')"></div>
+        </div>
+    </main>
+    <footer id="bottom_ui">
+        
+    </footer>
+
+    <script>
+        var ui = document.getElementById('access_ui'),
+        body = document.body;
+
+        ui.addEventListener('click', function(e) {
+            body.className = body.className? '' : 'with_ui';
+            e.preventDefault();
+        });
+
+        var chap = document.getElementById('chapter'),
+        chapJump = document.getElementById('ch_ju');
+
+        chap.addEventListener('click', function(e) {
+            chapJump.className = chapJump.className? '' : 'chapter_jump';
+            // $('.chapter_jump').toggleClass('chapter_jump');
+        })
+    </script>
+    <script src="js/page.js"></script>
+</body>
+</html>
