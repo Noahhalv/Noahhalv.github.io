@@ -68,7 +68,7 @@ async function getPage(title) {
             // console.log("Loading image from:", pageLoc);
             paper.style.backgroundImage = "url(" + pageLoc + ")";
             paper.style.backgroundColor = "rgba(0,0,0,0)";
-            window.location.hash = `chapter=${chapter}&page=${currPage}`;
+            window.location.hash = `${title}&chapter=${chapter}`;
             // Then load it into your image element
         } else {
             console.error("Invalid chapter/page data");
