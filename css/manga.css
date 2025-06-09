@@ -2,6 +2,8 @@ body {
     margin: 0;
     color: aliceblue;
     font-family: 'ADLaM Display';
+    height: 100vh;
+    overflow: hidden;
 }
 
 #chapter_jump {
@@ -170,7 +172,7 @@ main {
 }
 
 #paper div {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* height: 100%; */
     flex-grow: 1;
 }
