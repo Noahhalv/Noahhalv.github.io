@@ -2,6 +2,8 @@ body {
     margin: 0;
     color: aliceblue;
     font-family: 'ADLaM Display';
+    height: 100vh;
+    overflow: hidden;
 }
 
 #chapter_jump {
