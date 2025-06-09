@@ -1,3 +1,7 @@
+let title = sessionStorage.getItem("MangaTitle");
+console.log(title);
+getPage(title)
+
 let currPage = 1;
 let chapter = 1
 
@@ -7,6 +11,10 @@ let chapter = 1
 
 function chapterJump() {
     
+}
+
+function home() {
+    window.location.assign("index.html");
 }
 
 async function getPage(title) {
@@ -33,8 +41,9 @@ async function getPage(title) {
 
         docTitle.innerHTML = "Chapter " + chapter + ": " + data[chapter].title;
         docPage.innerHTML = currPage;
+        document.title = data[0].title + " Chapter " + chapter;
 
-        //! If there is anything wrong, ask ChatGPT
+        //! If there is anything wrong, It's not my fault because I didn't make it
         if (data[chapter] && data[chapter].pages && currPage > 0) {
             let type = encodeURIComponent(data[0].type);
             let genre = encodeURIComponent(data[0].genre);
@@ -55,5 +64,3 @@ async function getPage(title) {
         console.error('Error fetching JSON:', error);
     }
 }
-
-getPage("jujutsuKaisen");
