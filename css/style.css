@@ -5,7 +5,7 @@ body {
 
 nav {
     background-color: #6c888a;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -18,7 +18,7 @@ nav {
 main {
     min-height: 100vh;
     width: 100vw;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     transition: all 0.3s;
 }
 
