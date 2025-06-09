@@ -17,6 +17,17 @@ function home() {
     window.location.assign("index.html");
 }
 
+function parseHash() {
+    const hash = window.location.hash.substring(1); // Remove '#'
+    const params = new URLSearchParams(hash);
+    const ch = parseInt(params.get("chapter"));
+    const pg = parseInt(params.get("page"));
+
+    // Set your global chapter and currPage
+    if (!isNaN(ch)) chapter = ch;
+    if (!isNaN(pg)) currPage = pg;
+}
+
 async function getPage(title) {
     try {
         const response = await fetch('../json/' + title + ".json");
@@ -42,6 +53,7 @@ async function getPage(title) {
         docTitle.innerHTML = "Chapter " + chapter + ": " + data[chapter].title;
         docPage.innerHTML = currPage;
         document.title = data[0].title + " Chapter " + chapter;
+        
 
         //! If there is anything wrong, It's not my fault because I didn't make it
         if (data[chapter] && data[chapter].pages && currPage > 0) {
@@ -51,11 +63,12 @@ async function getPage(title) {
             // let pageNum = data[chapter].pages[currPage - 1];
             if (currPage < 10) {pageNum = String(currPage).padStart(2, '0');}
             else {pageNum = currPage.toString();}
-            console.log(pageNum);
+            // console.log(pageNum);
             let pageLoc = `../${type}/${genre}/${title}/chapter${chapter}/${pageNum}.jpg`;
             // console.log("Loading image from:", pageLoc);
             paper.style.backgroundImage = "url(" + pageLoc + ")";
             paper.style.backgroundColor = "rgba(0,0,0,0)";
+            window.location.hash = `chapter=${chapter}&page=${currPage}`;
             // Then load it into your image element
         } else {
             console.error("Invalid chapter/page data");
@@ -65,3 +78,13 @@ async function getPage(title) {
         console.error('Error fetching JSON:', error);
     }
 }
+
+window.addEventListener("hashchange", () => {
+    parseHash();
+    getPage("jujutsuKaisen");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    parseHash();
+    getPage("jujutsuKaisen");
+});
