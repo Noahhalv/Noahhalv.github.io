@@ -46,9 +46,9 @@ async function getPage(title) {
 
 
         if (currPage > data[chapter].pages) {
-            // console.warn('No more pages in chapter');
             currPage = 1;
             chapter++;
+            if (chapter >= data.length) {console.warn("No more chapters, wait for further updates."); return;}
         }
 
         docTitle.innerHTML = "Chapter " + chapter + ": " + data[chapter].title;
@@ -57,7 +57,9 @@ async function getPage(title) {
         let list = document.getElementById("chapter-list");
         let ls = document.createElement("li");
         console.log(data.length, list)
-        if (list.children >= 1) {list.removeChild();}
+        // if (list.children >= 1) {list.removeChild();}
+        chapJump = document.getElementById('ch_ju');
+        chapJump.className = '';
         for (let i = 1; i < data.length; i++) {
             console.log(list.children.length, data.length)
             if (list.children.length+1 == data.length) {
@@ -73,6 +75,7 @@ async function getPage(title) {
                 while (list.hasChildNodes()) {
                     list.removeChild(list.firstChild);
                 }
+                currPage = 1;
                 window.location.hash = `${title}&chapter=${i}`;
             }
             list.appendChild(ls);

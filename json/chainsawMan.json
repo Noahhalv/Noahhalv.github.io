@@ -1,0 +1,23 @@
+[
+    {
+        "comment": "Metadata goes here!",
+        "type": "manga",
+        "genre": "shonen",
+        "title": "Chainsaw Man"
+    },
+    {
+        "chapter": "1",
+        "title": "A Dog And A Chainsaw",
+        "pages": 53
+    },
+    {
+        "chapter": "2",
+        "title": "Pochita's Whereabouts",
+        "pages": 26
+    },
+    {
+        "chapter": "3",
+        "title": "Arrival In Tokyo",
+        "pages": 24
+    }
+]

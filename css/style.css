@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 150vh;
+    /* height: 150vh; */
 }
 
 nav {
@@ -75,8 +75,18 @@ main {
     align-items: center;
 }
 
+.item-list {
+    /* background-color: aqua; */
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 50vw;
+    flex-wrap: wrap;
+}
+
 .item {
-    width: 50%;
+    margin: 5% 1%;
+    /* width: 50%; */
     -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.3), 
     1px -1px 3px rgba(0,0,0,.3), 
     -1px 1px 3px rgba(0,0,0,.3), 
@@ -94,10 +104,10 @@ main {
 }
 
 .item div {
-    background-image: url(../manga/shonen/Jujutsu%20Kaisen/chapter1/01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    /* width: 100%; */
+    height: 50vh;
     aspect-ratio: 263/384;
 }
 
@@ -105,4 +115,12 @@ main {
     margin: 1% 2%;
     padding: 0;
     font-size: calc(1vw + 1vh + 1vmin);
+}
+
+#JJK {
+    background-image: url(../manga/shonen/Jujutsu%20Kaisen/chapter1/01.jpg);
+}
+
+#CSM {
+    background-image: url(../manga/shonen/Chainsaw%20Man/chapter1/01.jpg);
 }
