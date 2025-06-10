@@ -14,9 +14,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
     height: 30vh;
-    background-color: gray;
-    border: 1px solid white;
+    background-color: #6c888a;
+    border: 1px solid aliceblue;
     border-radius: 15px;
     -webkit-transition: all linear .2s; 
     -moz-transition: all linear .2s; 
@@ -24,6 +25,7 @@ body {
     -ms-transition: all linear .2s; transition: all .2s;
     z-index: 2;
     filter: opacity(0);
+    overflow-x: auto;
 }
 
 .chapter_jump #chapter_jump {
@@ -37,6 +39,19 @@ body {
     margin: 0;
     padding: 5%;
     text-align: center;
+    /* justify-self: start; */
+}
+
+#chapter_jump ul {
+    list-style-type: none;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+#chapter_list li {
+    margin: 0;
 }
 
 #top_ui {

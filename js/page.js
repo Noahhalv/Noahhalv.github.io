@@ -1,6 +1,7 @@
 let title = sessionStorage.getItem("MangaTitle");
 console.log(title);
 getPage(title)
+let data;
 
 let currPage = 1;
 let chapter = 1
@@ -36,7 +37,7 @@ async function getPage(title) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-        const data = await response.json();
+        data = await response.json();
         // console.log(data);
 
         const paper = document.getElementById("paper");
@@ -53,7 +54,30 @@ async function getPage(title) {
         docTitle.innerHTML = "Chapter " + chapter + ": " + data[chapter].title;
         docPage.innerHTML = currPage;
         document.title = data[0].title + " Chapter " + chapter;
-        
+        let list = document.getElementById("chapter-list");
+        let ls = document.createElement("li");
+        console.log(data.length, list)
+        if (list.children >= 1) {list.removeChild();}
+        for (let i = 1; i < data.length; i++) {
+            console.log(list.children.length, data.length)
+            if (list.children.length+1 == data.length) {
+                while (list.hasChildNodes()) {
+                    list.removeChild(list.firstChild);
+                }
+            }
+            list = document.getElementById("chapter-list");
+            ls = document.createElement("li");
+            let node = document.createTextNode("chapter " + i + ": " + data[i].title);
+            ls.appendChild(node);
+            ls.onclick = function() {
+                while (list.hasChildNodes()) {
+                    list.removeChild(list.firstChild);
+                }
+                window.location.hash = `${title}&chapter=${i}`;
+            }
+            list.appendChild(ls);
+            console.log(list, ls, node, i, data[i], data.length)
+        }
 
         //! If there is anything wrong, It's not my fault because I didn't make it
         if (data[chapter] && data[chapter].pages && currPage > 0) {
@@ -70,7 +94,7 @@ async function getPage(title) {
             paper.style.backgroundColor = "rgba(0,0,0,0)";
             window.location.hash = `${title}&chapter=${chapter}`;
             // Then load it into your image element
-        } else {
+        }else {
             console.error("Invalid chapter/page data");
         }
         
@@ -81,10 +105,10 @@ async function getPage(title) {
 
 window.addEventListener("hashchange", () => {
     parseHash();
-    getPage("jujutsuKaisen");
+    getPage(title);
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    parseHash();
-    getPage("jujutsuKaisen");
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     parseHash();
+//     getPage("jujutsuKaisen");
+// });
