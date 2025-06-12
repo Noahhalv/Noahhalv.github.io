@@ -12,14 +12,14 @@
 
     <div class="" id="ch_ju">
         <div id="chapter_jump">
-            <p>Chapter Jump</p>
+            <h4>Chapter Jump</h4>
             <ul id="chapter-list"></ul>
         </div>
     </div>
 
     <nav id="top_ui">
         <div id="home" tabindex="0"><img src="images/logo.png" alt="Home" id="logo" onclick="home()"></div>
-        <div id="chapter" onclick=""></div>
+        <div id="chapter"></div>
         <div id="page"></div>
     </nav>
     <main>
@@ -36,7 +36,7 @@
                     console.warn('Cannot go below chapter 1')
                 } else {console.warn('Pages cannot go below 1')}
                 "></div>
-            <div id="access_ui" class="center" onclick=""></div>
+            <div id="access_ui" class="center"></div>
             <div class="right" onclick="currPage++; getPage(sessionStorage.getItem('MangaTitle'))"></div>
         </div>
     </main>

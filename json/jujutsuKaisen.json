@@ -69,5 +69,260 @@
         "chapter": "13",
         "title": "Movie Appreciation",
         "pages": 19
+    },
+    {
+        "chapter": "14",
+        "title": "A Sudden Attack",
+        "pages": 19
+    },
+    {
+        "chapter": "15",
+        "title": "Expansion",
+        "pages": 18
+    },
+    {
+        "chapter": "16",
+        "title": "Compassion",
+        "pages": 21
+    },
+    {
+        "chapter": "17",
+        "title": "Boredom",
+        "pages": 20
+    },
+    {
+        "chapter": "18",
+        "title": "Low Class",
+        "pages": 20
+    },
+    {
+        "chapter": "19",
+        "title": "Small Fry And Reverse Retribution",
+        "pages": 20
+    },
+    {
+        "chapter": "20",
+        "title": "Small Fry And Reverse Retribution (2)",
+        "pages": 20
+    },
+    {
+        "chapter": "21",
+        "title": "Small Fry And Reverse Retribution (3)",
+        "pages": 20
+    },
+    {
+        "chapter": "22",
+        "title": "Small Fry And Reverse Retribution (4)",
+        "pages": 20
+    },
+    {
+        "chapter": "23",
+        "title": "Small Fry And Reverse Retribution (5)",
+        "pages": 21
+    },
+    {
+        "chapter": "24",
+        "title": "Small Fry And Reverse Retribution (6)",
+        "pages": 20
+    },
+    {
+        "chapter": "25",
+        "title": "Narrow-Minded Foolishness",
+        "pages": 20
+    },
+    {
+        "chapter": "26",
+        "title": "To You Of Someday",
+        "pages": 19
+    },
+    {
+        "chapter": "27",
+        "title": "If",
+        "pages": 19
+    },
+    {
+        "chapter": "28",
+        "title": "I'll Kill You",
+        "pages": 21
+    },
+    {
+        "chapter": "29",
+        "title": "Growth",
+        "pages": 19
+    },
+    {
+        "chapter": "30",
+        "title": "Selfish",
+        "pages": 19
+    },
+    {
+        "chapter": "31",
+        "title": "See You Tomorrow",
+        "pages": 22
+    },
+    {
+        "chapter": "32",
+        "title": "Reflection",
+        "pages": 21
+    },
+    {
+        "chapter": "33",
+        "title": "Exchange Festival With The Kyoto School - Team Battle 0",
+        "pages": 19
+    },
+    {
+        "chapter": "34",
+        "title": "Exchange Festival With The Kyoto School - Team Battle 1",
+        "pages": 18
+    },
+    {
+        "chapter": "35",
+        "title": "Exchange Festival With The Kyoto School - Team Battle 2",
+        "pages": 19
+    },
+    {
+        "chapter": "36",
+        "title": "Exchange Festival With The Kyoto School - Team Battle 3",
+        "pages": 20
+    },
+    {
+        "chapter": "37",
+        "title": "Exchange Festival With The Kyoto School - Team Battle 4",
+        "pages": 21
+    },
+    {
+        "chapter": "38",
+        "title": "Exchange Festival With The Kyoto School - Team Battle 5",
+        "pages": 19
+    },
+    {
+        "chapter": "39",
+        "title": "Exchange Festival With The Kyoto School - Team Battle 6",
+        "pages": 22
+    },
+    {
+        "chapter": "40",
+        "title": "Kyoto Sister School Goodwill Event - Team Battle, Part 7",
+        "pages": 19
+    },
+    {
+        "chapter": "41",
+        "title": "Kyoto Sister School Goodwill Event - Team Battle, Part 8",
+        "pages": 19
+    },
+    {
+        "chapter": "42",
+        "title": "Kyoto Sister School Goodwill Event - Team Battle, Part 9",
+        "pages": 19
+    },
+    {
+        "chapter": "43",
+        "title": "Kyoto Sister School Goodwill Event - Team Battle, Part 10",
+        "pages": 20
+    },
+    {
+        "chapter": "44",
+        "title": "Kyoto Sister School Goodwill Event - Team Battle, Part 11",
+        "pages": 19
+    },
+    {
+        "chapter": "45",
+        "title": "Wise Man",
+        "pages": 19
+    },
+    {
+        "chapter": "46",
+        "title": "Time",
+        "pages": 22
+    },
+    {
+        "chapter": "47",
+        "title": "Cursed Tool",
+        "pages": 18
+    },
+    {
+        "chapter": "48",
+        "title": "Black Flash",
+        "pages": 18
+    },
+    {
+        "chapter": "49",
+        "title": "Constrained",
+        "pages": 21
+    },
+    {
+        "chapter": "50",
+        "title": "Premonition",
+        "pages": 19
+    },
+    {
+        "chapter": "51",
+        "title": "Flower",
+        "pages": 19
+    },
+    {
+        "chapter": "52",
+        "title": "Non-Standard",
+        "pages": 18
+    },
+    {
+        "chapter": "53",
+        "title": "Completion",
+        "pages": 19
+    },
+    {
+        "chapter": "54",
+        "title": "Jujutsu Koshien",
+        "pages": 19
+    },
+    {
+        "chapter": "55",
+        "title": "The Origin Of Obedience",
+        "pages": 19
+    },
+    {
+        "chapter": "56",
+        "title": "The Origin Of Obedience, Part 2",
+        "pages": 23
+    },
+    {
+        "chapter": "57",
+        "title": "The Origin Of Obedience, Part 3",
+        "pages": 19
+    },
+    {
+        "chapter": "58",
+        "title": "The Origin Of Obedience, Part 4",
+        "pages": 21
+    },
+    {
+        "chapter": "59",
+        "title": "Origin Of Obedience V",
+        "pages": 20
+    },
+    {
+        "chapter": "60",
+        "title": "Origin Of Obedience Vi",
+        "pages": 18
+    },
+    {
+        "chapter": "61",
+        "title": "Origin Of Obedience Vii",
+        "pages": 18
+    },
+    {
+        "chapter": "62",
+        "title": "The Origin Of Obedience, Part 8",
+        "pages": 19
+    },
+    {
+        "chapter": "63",
+        "title": "Accomplices",
+        "pages": 21
+    },
+    {
+        "chapter": "64",
+        "title": "It's Like That",
+        "pages": 19
     }
 ]

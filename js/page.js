@@ -69,8 +69,10 @@ async function getPage(title) {
             }
             list = document.getElementById("chapter-list");
             ls = document.createElement("li");
-            let node = document.createTextNode("chapter " + i + ": " + data[i].title);
-            ls.appendChild(node);
+            let node = document.createTextNode("Chapter " + i + ": " + data[i].title);
+            let p = document.createElement("p");
+            p.append(node);
+            ls.appendChild(p);
             ls.onclick = function() {
                 while (list.hasChildNodes()) {
                     list.removeChild(list.firstChild);
