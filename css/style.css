@@ -16,8 +16,8 @@ nav {
 }
 
 main {
-    min-height: 100vh;
-    width: 100vw;
+    /* min-height: 100vh; */
+    /* width: 100vw; */
     /* margin-top: 10vh; */
     transition: all 0.3s;
 }
@@ -67,21 +67,26 @@ main {
     aspect-ratio: 1/1;
 }
 
-.recommended {
+#categories > div {
     background-color: rgb(240, 240, 240);
     padding: 2vh 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.item-list {
+#item-list {
+    margin: 0;
     /* background-color: aqua; */
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
-    min-width: 50vw;
-    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    /* min-width: 50vw; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    padding: 0;
 }
 
 .item {
@@ -101,11 +106,13 @@ main {
     1px -1px 3px rgba(0,0,0,.3), 
     -1px 1px 3px rgba(0,0,0,.3), 
     -1px -1px 3px rgba(0,0,0,.3);
+
+    transition: all 50ms;
 }
 
-.item div {
-    background-size: cover;
-    background-repeat: no-repeat;
+.item img {
+    /* background-size: cover;
+    background-repeat: no-repeat; */
     /* width: 100%; */
     height: 50vh;
     aspect-ratio: 263/384;
@@ -117,10 +124,38 @@ main {
     font-size: calc(1vw + 1vh + 1vmin);
 }
 
+.item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 #JJK {
     background-image: url(../manga/shonen/Jujutsu%20Kaisen/chapter1/01.jpg);
 }
 
 #CSM {
     background-image: url(../manga/shonen/Chainsaw%20Man/chapter1/01.jpg);
+}
+
+@media only screen and (width > 50vh) {
+    .search {
+        padding: 0 25%;
+    }
+    .search input {
+        height: 30%;
+    }
+    .search-ico {
+        height: 70%;
+    }
+
+    #item-list {
+        flex-direction: row;
+        min-width: 50vw;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        flex-wrap: wrap;
+        /* border: 1px solid black; */
+    }
 }

@@ -1,0 +1,32 @@
+[
+    {
+        "group": "Recommended",
+        "items": [
+            "jujutsuKaisen",
+            "chainsawMan"
+        ],
+        "title": [
+            "Jujutsu Kaisen",
+            "Chainsaw Man"
+        ],
+        "links": [
+            "manga/shonen/Jujutsu Kaisen",
+            "manga/shonen/Chainsaw Man"
+        ]
+    },
+    {
+        "group": "Shonen",
+        "items": [
+            "chainsawMan",
+            "jujutsuKaisen"
+        ],
+        "title": [
+            "Chainsaw Man",
+            "Jujutsu Kaisen"
+        ],
+        "links": [
+            "manga/shonen/Chainsaw Man",
+            "manga/shonen/Jujutsu Kaisen"
+        ]
+    }
+]
