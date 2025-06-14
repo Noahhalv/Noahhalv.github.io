@@ -1,0 +1,33 @@
+[
+    {
+        "comment": "Metadata goes here!",
+        "type": "manga",
+        "genre": "shonen",
+        "title": "Tensura"
+    },
+    {
+        "chapter": "1",
+        "title": "Death And Reincarnation",
+        "pages": 47
+    },
+    {
+        "chapter": "2",
+        "title": "Guardian Of The Goblin Village",
+        "pages": 38
+    },
+    {
+        "chapter": "3",
+        "title": "Slime VS Fang Wolf Tribe",
+        "pages": 35
+    },
+    {
+        "chapter": "4",
+        "title": "Destination Dwarven Kingdom",
+        "pages": 30
+    },
+    {
+        "chapter": "5",
+        "title": "Dwarven Artisan!!",
+        "pages": 30
+    }
+]

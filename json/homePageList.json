@@ -3,30 +3,36 @@
         "group": "Recommended",
         "items": [
             "jujutsuKaisen",
-            "chainsawMan"
+            "chainsawMan",
+            "tensura"
         ],
         "title": [
             "Jujutsu Kaisen",
-            "Chainsaw Man"
+            "Chainsaw Man",
+            "That Time I got Reincarnated As A Slime"
         ],
         "links": [
             "manga/shonen/Jujutsu Kaisen",
-            "manga/shonen/Chainsaw Man"
+            "manga/shonen/Chainsaw Man",
+            "manga/shonen/Tensura"
         ]
     },
     {
         "group": "Shonen",
         "items": [
             "chainsawMan",
-            "jujutsuKaisen"
+            "jujutsuKaisen",
+            "tensura"
         ],
         "title": [
             "Chainsaw Man",
-            "Jujutsu Kaisen"
+            "Jujutsu Kaisen",
+            "That Time I got Reincarnated As A Slime"
         ],
         "links": [
             "manga/shonen/Chainsaw Man",
-            "manga/shonen/Jujutsu Kaisen"
+            "manga/shonen/Jujutsu Kaisen",
+            "manga/shonen/Tensura"
         ]
     }
 ]
