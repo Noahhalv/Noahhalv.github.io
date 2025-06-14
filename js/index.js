@@ -1,5 +1,3 @@
-sessionStorage.clear();
-
 function sendTitle(title) {
     sessionStorage.setItem("MangaTitle", title);
     window.location.assign("manga.html");
@@ -19,7 +17,7 @@ async function createItem() {
         let cat = document.getElementById('categories'), div = document.createElement('div'), h2 = document.createElement('h2'),
         ul = document.createElement('ul');
         ul.id = 'item-list';
-        for (let i = 0; i < data[0].items.length && 4; i++) {
+        for (let i = 0; i < data[0].items.length && i < 3; i++) {
             let h2 = document.createElement('h2'), li = document.createElement('li'), img = document.createElement('img');
             h2.textContent = '';
             let node = document.createTextNode(data[0].title[i]);
@@ -48,7 +46,7 @@ async function createItem() {
             ul.id = 'item-list'
             // let itList = document.getElementById('item-list');
 
-            for (let i = 0; i < data[l].items.length && 4; i++) {
+            for (let i = 0; i < data[l].items.length && i < 3; i++) {
                 let h2 = document.createElement('h2');
                 let li = document.createElement('li');
                 let img = document.createElement('img');
