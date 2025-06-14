@@ -10,5 +10,5 @@ This may change sometime in the future.
 
 Current manga included:
     Jujutsu Kaisen Chapter 1-64
-    Chainsaw Man Chapter 1-3
+    Chainsaw Man Chapter 1-25
     That Time I got Reincarnated As A Slime 1-5
