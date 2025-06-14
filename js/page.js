@@ -87,13 +87,12 @@ async function getPage(title) {
         //! If there is anything wrong, It's not my fault because I didn't make it
         if (data[chapter] && data[chapter].pages && currPage > 0) {
             let type = encodeURIComponent(data[0].type);
-            let genre = encodeURIComponent(data[0].genre);
             let title = encodeURIComponent(data[0].title);
             // let pageNum = data[chapter].pages[currPage - 1];
             if (currPage < 10) {pageNum = String(currPage).padStart(2, '0');}
             else {pageNum = currPage.toString();}
             // console.log(pageNum);
-            let pageLoc = `../${type}/${genre}/${title}/chapter${chapter}/${pageNum}.jpg`;
+            let pageLoc = `../${type}/${title}/chapter${chapter}/${pageNum}.jpg`;
             // console.log("Loading image from:", pageLoc);
             paper.style.backgroundImage = "url(" + pageLoc + ")";
             paper.style.backgroundColor = "rgba(0,0,0,0)";
